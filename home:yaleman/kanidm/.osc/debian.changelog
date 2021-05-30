@@ -1,0 +1,6 @@
+kanidm (1.1.0alpha.4) unstable; urgency=low
+
+  [ James Hodgkinson ]
+  * I totally admit this is just filler text to convince the debian packaging system to work.
+
+ -- James Hodgkinson <james@terminaloutcomes.com>  Sat, 29 May 2021 11:02:10 +1000

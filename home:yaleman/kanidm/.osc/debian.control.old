@@ -1,0 +1,11 @@
+Section: web
+Priority: optional
+#Maintainer: James Hodgkinson <james@terminaloutcomes.com>
+#Description: Kanidm CLI Client
+#Source: kanidm 
+Standards-Version: 4.5.1.0
+Build-Depends: debhelper (>= 9), clang, build-essential, librust-openssl-dev, libssl-dev, libsqlite3-dev, libudev-dev, libpam0g-dev 
+
+Package: kanidm
+Essential: no
+Architecture: any

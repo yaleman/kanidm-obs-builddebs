@@ -1,0 +1,19 @@
+<directory name="kanidm" rev="14" vrev="14" srcmd5="548110a0ed7f7da798d3cb357d543d3d">
+  <serviceinfo code="succeeded" xsrcmd5="b5a436604b1b1cd7924c64a17ec29ede" />
+  <entry name="_service" md5="2da25a70d1bdc5865745cf7c0b27e5df" size="687" mtime="1622342091" />
+  <entry name="debian.changelog" md5="88a15bd437bbdf0303c6d219907afcae" size="246" mtime="1622284580" />
+  <entry name="debian.compat" md5="31d30eea8d0968d6458e0ad0027c9f80" size="3" mtime="1622284581" />
+  <entry name="debian.control" md5="9ca2560aa40cda484dae45578a173e2e" size="48" mtime="1622284583" />
+  <entry name="debian.control.old" md5="baa57a62fe540159f4603747e307803d" size="349" mtime="1622284584" />
+  <entry name="debian.install" md5="6427e4d92136ed0c58d2000c7b489994" size="30" mtime="1622300453" />
+  <entry name="debian.rules" md5="54bf4e7a90696b0848c13054232b0dcd" size="2190" mtime="1622342974" />
+  <entry name="debian.rules.old" md5="13d1e78f9497f7fb9f18f4e16c830eb2" size="1808" mtime="1622284587" />
+  <entry name="grablatest.sh" md5="1e7d868e9e5735a8221063b8c1318e57" size="1601" mtime="1622269483" />
+  <entry name="kanidm.changes" md5="e66662fcb35b07fad898d1457fc14f78" size="192" mtime="1622284588" />
+  <entry name="kanidm.spec" md5="1c173842a30facf22a8b178cfa6c0e4c" size="2554" mtime="1622284589" />
+  <entry name="kanidm.tar.gz" md5="be4387fe328d68e02543c803a72fb3ba" size="5821483" mtime="1622206757" />
+  <entry name="kanidm_1.1.0alpha.4.dsc" md5="92e48c5362bf28fa69c2aa02e3e79958" size="711" mtime="1622289802" />
+  <entry name="kanidm_1.1.0alpha.4.tar.gz" md5="e865999638a3356e0003671141e65cac" size="2849265" mtime="1622284597" />
+  <entry name="rust-1.52.1-x86_64-unknown-linux-gnu.tar.gz" md5="ae073d2bfe4ff4a9d4d723b7c115d1cd" size="249887515" mtime="1622284905" />
+  <entry name="vendor.tar.gz" md5="102009e13ff7525f3d5ea9cc47ef176c" size="42674703" mtime="1622269529" />
+</directory>

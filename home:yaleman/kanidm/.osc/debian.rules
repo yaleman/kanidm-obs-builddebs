@@ -1,0 +1,64 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+DH_VERBOSE = 1
+ 
+%:
+	echo $@
+	find /usr/src/packages/BUILD/debian/
+	dh $@
+
+# this gave me a lot of hints https://askubuntu.com/questions/1173509/creating-a-deb-dpkg-genbuildinfo-buildinfo-is-meaningless#117395
+
+#include /usr/share/cdbs/1/rules/debhelper.mk
+#include /usr/share/cdbs/1/class/qmake.mk
+
+# see FEATURE AREAS in dpkg-buildflags(1)
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+ 
+PATH := /home/abuild/.local/bin/:$(PATH)
+
+NAME=kanidm
+RUST_VERSION=1.52.1
+
+DESTDIR=$(CURDIR)/debian/$(NAME)
+
+# see ENVIRONMENT in dpkg-buildflags(1)
+# package maintainers to append CFLAGS
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+# package maintainers to append LDFLAGS
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+V=1
+
+
+override_dh_auto_build:
+	export
+
+	
+	# fix armv7l on ubuntu 21.04
+	# https://stackoverflow.com/questions/15977796/if-conditions-in-a-makefile-inside-a-target#30773906
+	ifeq ($(DEB_TARGET_ARCH_CPU), arm)
+		$(info setting arch to armv7 because ubuntu is strange)
+		DEB_TARGET_ARCH_CPU = armv7l
+	endif
+
+	echo "override_dh_auto_build"
+	mkdir -p ~/.cargo/
+	echo '[source.crates-io]' > ~/.cargo/config.toml
+	echo 'replace-with = "vendored-sources"' >> ~/.cargo/config.toml
+	echo '[source.vendored-sources]' >> ~/.cargo/config.toml
+	echo "directory = \"/tmp/rust-vendor/\"" >> ~/.cargo/config.toml
+	mkdir -p "/tmp/rust-vendor/"
+	tar -xzf "/usr/src/packages/SOURCES/vendor.tar.gz" --directory "/tmp/rust-vendor/"
+	tar -zxf "/usr/src/packages/SOURCES/rust-$(RUST_VERSION)-${DEB_BUILD_GNU_CPU}-unknown-${DEB_TARGET_GNU_SYSTEM}.tar.gz" --directory "/tmp"
+	chmod +x /tmp/rust-$(RUST_VERSION)-${DEB_BUILD_GNU_CPU}-unknown-${DEB_TARGET_GNU_SYSTEM}/*
+	mkdir -p ~/.local
+	/tmp/rust-$(RUST_VERSION)-${DEB_BUILD_GNU_CPU}-unknown-${DEB_TARGET_GNU_SYSTEM}/install.sh --disable-ldconfig --prefix=~/.local/ --without=rust-docs,clippy-preview,rust-analyzer-preview,miri-preview,rustfmt-preview,rls-preview
+	rustc --version
+	cargo build --release --bin kanidm
+#cargo build --release --bin kanidmd
+#cargo build --release --bin kanidm_unixd
+	dh_testdir
+	dh_prep
+
