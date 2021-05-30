@@ -31,16 +31,11 @@ DESTDIR=$(CURDIR)/debian/$(NAME)
 
 V=1
 
+# fix armv7l on ubuntu 21.04
+# https://stackoverflow.com/questions/15977796/if-conditions-in-a-makefile-inside-a-target#30773906
 
 override_dh_auto_build:
 	export
-
-	
-	# fix armv7l on ubuntu 21.04
-	# https://stackoverflow.com/questions/15977796/if-conditions-in-a-makefile-inside-a-target#30773906
-ifeq (${DEB_TARGET_ARCH_CPU},arm)
-	DEB_TARGET_ARCH_CPU = armv7l
-endif
 
 	echo "override_dh_auto_build"
 	mkdir -p ~/.cargo/
@@ -50,10 +45,17 @@ endif
 	echo "directory = \"/tmp/rust-vendor/\"" >> ~/.cargo/config.toml
 	mkdir -p "/tmp/rust-vendor/"
 	tar -xzf "/usr/src/packages/SOURCES/vendor.tar.gz" --directory "/tmp/rust-vendor/"
+ifeq (${DEB_TARGET_ARCH_CPU},arm)
+	tar -zxf "/usr/src/packages/SOURCES/rust-$(RUST_VERSION)-armv7-unknown-${DEB_TARGET_GNU_SYSTEM}.tar.gz" --directory "/tmp"
+	mv "/tmp/rust-$(RUST_VERSION)-armv7-unknown-${DEB_TARGET_GNU_SYSTEM}" "/tmp/rust"
+else
 	tar -zxf "/usr/src/packages/SOURCES/rust-$(RUST_VERSION)-${DEB_BUILD_GNU_CPU}-unknown-${DEB_TARGET_GNU_SYSTEM}.tar.gz" --directory "/tmp"
-	chmod +x /tmp/rust-$(RUST_VERSION)-${DEB_BUILD_GNU_CPU}-unknown-${DEB_TARGET_GNU_SYSTEM}/*
+	mv "/tmp/rust-$(RUST_VERSION)-${DEB_BUILD_GNU_CPU}-unknown-${DEB_TARGET_GNU_SYSTEM}/" "/tmp/rust/"
+endif
+	chmod +x /tmp/rust/*
 	mkdir -p ~/.local
-	/tmp/rust-$(RUST_VERSION)-${DEB_BUILD_GNU_CPU}-unknown-${DEB_TARGET_GNU_SYSTEM}/install.sh --disable-ldconfig --prefix=~/.local/ --without=rust-docs,clippy-preview,rust-analyzer-preview,miri-preview,rustfmt-preview,rls-preview
+	/tmp/rust/install.sh --disable-ldconfig --prefix=~/.local/ --without=rust-docs,clippy-preview,rust-analyzer-preview,miri-preview,rustfmt-preview,rls-preview
+
 	rustc --version
 	cargo build --release --bin kanidm
 #cargo build --release --bin kanidmd
