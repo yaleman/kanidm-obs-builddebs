@@ -1,12 +1,13 @@
-<directory name="kanidm" rev="14" vrev="14" srcmd5="548110a0ed7f7da798d3cb357d543d3d">
-  <serviceinfo code="succeeded" xsrcmd5="b5a436604b1b1cd7924c64a17ec29ede" />
+<directory name="kanidm" rev="17" vrev="17" srcmd5="4eec9eb9e36e1586dea63eff6def3444">
+  <serviceinfo code="succeeded" xsrcmd5="27aa9ff94f172c6b501453ab8ce95f81" />
+  <entry name="README.md" md5="adb8513f5c59fe7f6935ce6759d2a6e1" size="319" mtime="1622343719" />
   <entry name="_service" md5="2da25a70d1bdc5865745cf7c0b27e5df" size="687" mtime="1622342091" />
   <entry name="debian.changelog" md5="88a15bd437bbdf0303c6d219907afcae" size="246" mtime="1622284580" />
   <entry name="debian.compat" md5="31d30eea8d0968d6458e0ad0027c9f80" size="3" mtime="1622284581" />
   <entry name="debian.control" md5="9ca2560aa40cda484dae45578a173e2e" size="48" mtime="1622284583" />
   <entry name="debian.control.old" md5="baa57a62fe540159f4603747e307803d" size="349" mtime="1622284584" />
   <entry name="debian.install" md5="6427e4d92136ed0c58d2000c7b489994" size="30" mtime="1622300453" />
-  <entry name="debian.rules" md5="54bf4e7a90696b0848c13054232b0dcd" size="2190" mtime="1622342974" />
+  <entry name="debian.rules" md5="ac621a2e9400afc199c543d6dfb15cea" size="2128" mtime="1622344471" />
   <entry name="debian.rules.old" md5="13d1e78f9497f7fb9f18f4e16c830eb2" size="1808" mtime="1622284587" />
   <entry name="grablatest.sh" md5="1e7d868e9e5735a8221063b8c1318e57" size="1601" mtime="1622269483" />
   <entry name="kanidm.changes" md5="e66662fcb35b07fad898d1457fc14f78" size="192" mtime="1622284588" />

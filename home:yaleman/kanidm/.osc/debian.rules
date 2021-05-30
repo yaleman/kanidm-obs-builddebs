@@ -38,10 +38,9 @@ override_dh_auto_build:
 	
 	# fix armv7l on ubuntu 21.04
 	# https://stackoverflow.com/questions/15977796/if-conditions-in-a-makefile-inside-a-target#30773906
-	ifeq ($(DEB_TARGET_ARCH_CPU), arm)
-		$(info setting arch to armv7 because ubuntu is strange)
-		DEB_TARGET_ARCH_CPU = armv7l
-	endif
+ifeq (${DEB_TARGET_ARCH_CPU},arm)
+	DEB_TARGET_ARCH_CPU = armv7l
+endif
 
 	echo "override_dh_auto_build"
 	mkdir -p ~/.cargo/
