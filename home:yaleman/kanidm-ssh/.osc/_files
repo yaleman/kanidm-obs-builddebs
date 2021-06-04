@@ -1,0 +1,10 @@
+<directory name="kanidm-ssh" rev="1" vrev="1" srcmd5="9836aae6f24a2539c9d0f924f0ecce02">
+  <linkinfo project="home:yaleman" package="kanidm" srcmd5="f83fe0d51bcd2fa1afa90f8ea7172f40" xsrcmd5="25c03d5ba98970fa87b521b85c71335f" lsrcmd5="9836aae6f24a2539c9d0f924f0ecce02" />
+  <entry name="_link" md5="30966d8a40c9fdebc7c46e03fdfe868b" size="49" mtime="1622812955" />
+  <entry name="debian.changelog" md5="88a15bd437bbdf0303c6d219907afcae" size="246" mtime="1622812957" />
+  <entry name="debian.compat" md5="31d30eea8d0968d6458e0ad0027c9f80" size="3" mtime="1622812958" />
+  <entry name="debian.control" md5="1915b68497f6414c959bf3e338ef85e3" size="80" mtime="1622812960" />
+  <entry name="debian.install" md5="7871dde81ae1c284ff5c34dde4d3941d" size="106" mtime="1622812961" />
+  <entry name="debian.rules" md5="843d1951ba76c51948cabb36d9f88c4f" size="2345" mtime="1622812962" />
+  <entry name="kanidm-ssh_1.1.0alpha.4.dsc" md5="765d9d4221dcde62af89a5895a8c8e41" size="727" mtime="1622812964" />
+</directory>

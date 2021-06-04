@@ -1,3 +1,4 @@
 <project name="home:yaleman">
   <package name="kandim" state=" " />
+  <package name="kanidm-ssh" state=" " />
 </project>

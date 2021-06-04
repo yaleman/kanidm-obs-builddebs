@@ -1,0 +1,2 @@
+target/release/kanidm_ssh_authorizedkeys_direct usr/bin
+target/release/kanidm_ssh_authorizedkeys usr/sbin

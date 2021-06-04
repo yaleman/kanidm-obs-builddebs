@@ -1,0 +1,4 @@
+Package: kanidm
+Essential: no
+Architecture: any
+Description: Kanidm SSH tooling
