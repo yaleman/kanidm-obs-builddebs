@@ -44,7 +44,7 @@ override_dh_auto_build:
 	echo '[source.vendored-sources]' >> ~/.cargo/config.toml
 	echo "directory = \"/tmp/rust-vendor/\"" >> ~/.cargo/config.toml
 	mkdir -p "/tmp/rust-vendor/"
-	tar -xzf "/usr/src/packages/SOURCES/vendor.tar.gz" --directory "/tmp/rust-vendor/"
+	tar -xf "/usr/src/packages/SOURCES/vendor.tar.xz" --directory "/tmp/rust-vendor/"
 ifeq (${DEB_TARGET_ARCH_CPU},arm)
 	tar -zxf "/usr/src/packages/SOURCES/rust-$(RUST_VERSION)-armv7-unknown-${DEB_TARGET_GNU_SYSTEM}.tar.gz" --directory "/tmp"
 	mv "/tmp/rust-$(RUST_VERSION)-armv7-unknown-${DEB_TARGET_GNU_SYSTEM}" "/tmp/rust"

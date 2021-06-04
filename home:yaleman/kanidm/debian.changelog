@@ -1,4 +1,4 @@
-kanidm (1.1.0alpha.4) unstable; urgency=low
+kanidm (1.1.0alpha.4~git39.033b977-0) unstable; urgency=low
 
   [ James Hodgkinson ]
   * I totally admit this is just filler text to convince the debian packaging system to work.

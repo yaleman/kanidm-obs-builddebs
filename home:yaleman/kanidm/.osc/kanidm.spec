@@ -17,7 +17,7 @@
 
 
 Name:           kanidm
-Version:        1.1.0alpha.4 
+Version:        1.1.0alpha.4~git39.033b977
 Release:        0
 Summary:	Kanidm CLI Client
 # FIXME: Select a correct license from https://github.com/openSUSE/spec-cleaner#spdx-licenses

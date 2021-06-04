@@ -1,17 +1,16 @@
-<directory name="kanidm" rev="21" vrev="21" srcmd5="89ff01aca93e86c21c91a81d79b3aa89">
-  <serviceinfo code="succeeded" xsrcmd5="bef4487b20950e1f00ddcf65354b0935" />
+<directory name="kanidm" rev="24" vrev="3" srcmd5="f7bc2638bb4dcf64166750420982a6b3">
+  <serviceinfo code="succeeded" xsrcmd5="55322b80049a146faae716155a12ab76" />
   <entry name="README.md" md5="adb8513f5c59fe7f6935ce6759d2a6e1" size="319" mtime="1622343719" />
-  <entry name="_service" md5="2da25a70d1bdc5865745cf7c0b27e5df" size="687" mtime="1622342091" />
-  <entry name="debian.changelog" md5="88a15bd437bbdf0303c6d219907afcae" size="246" mtime="1622284580" />
+  <entry name="_service" md5="681e954b5b28b4ea674f628dd50dc24f" size="1721" mtime="1622384638" />
+  <entry name="debian.changelog" md5="6d2f03abb2c8b566bf1d3df26e96d1c1" size="262" mtime="1622384640" />
   <entry name="debian.compat" md5="31d30eea8d0968d6458e0ad0027c9f80" size="3" mtime="1622284581" />
   <entry name="debian.control" md5="9ca2560aa40cda484dae45578a173e2e" size="48" mtime="1622284583" />
   <entry name="debian.install" md5="6427e4d92136ed0c58d2000c7b489994" size="30" mtime="1622300453" />
-  <entry name="debian.rules" md5="967bab515d3c497be1380e0bc1bbb791" size="2266" mtime="1622348453" />
+  <entry name="debian.rules" md5="ef3632bf21f3f59b2c7903f505c29f7f" size="2265" mtime="1622384641" />
   <entry name="grablatest.sh" md5="1e7d868e9e5735a8221063b8c1318e57" size="1601" mtime="1622269483" />
-  <entry name="kanidm.changes" md5="e66662fcb35b07fad898d1457fc14f78" size="192" mtime="1622284588" />
-  <entry name="kanidm.spec" md5="1c173842a30facf22a8b178cfa6c0e4c" size="2554" mtime="1622284589" />
-  <entry name="kanidm_1.1.0alpha.4.dsc" md5="92e48c5362bf28fa69c2aa02e3e79958" size="711" mtime="1622289802" />
+  <entry name="kanidm.changes" md5="5a3c9e0e50582cadca56d8250129b303" size="808" mtime="1622384642" />
+  <entry name="kanidm.spec" md5="c223ee77e782e1a7784eca29735aba05" size="2567" mtime="1622384643" />
+  <entry name="kanidm_1.1.0alpha.4.dsc" md5="edec62d60c5045e25fa9871ee7e85daf" size="737" mtime="1622384645" />
   <entry name="kanidm_1.1.0alpha.4.tar.gz" md5="e865999638a3356e0003671141e65cac" size="2849265" mtime="1622284597" />
   <entry name="rust-1.52.1-x86_64-unknown-linux-gnu.tar.gz" md5="ae073d2bfe4ff4a9d4d723b7c115d1cd" size="249887515" mtime="1622284905" />
-  <entry name="vendor.tar.gz" md5="102009e13ff7525f3d5ea9cc47ef176c" size="42674703" mtime="1622269529" />
 </directory>

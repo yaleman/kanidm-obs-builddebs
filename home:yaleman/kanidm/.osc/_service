@@ -1,15 +1,40 @@
 <services>
-  <service name="download_url">
+  <service mode="disabled" name="obs_scm">
+    <param name="url">https://github.com/kanidm/kanidm.git</param>
+    <param name="versionformat">@PARENT_TAG@~git@TAG_OFFSET@.%h</param>
+    <param name="scm">git</param>
+    <param name="match-tag">*</param>
+    <param name="versionrewrite-pattern">v(\d+\.\d+\.\d+)\-</param>
+    <param name="versionrewrite-replacement">\1</param>
+    <param name="changesgenerate">enable</param>
+    <param name="changesauthor">james@terminaloutcomes.com</param>
+  </service>
+  <service mode="disabled" name="tar" />
+  <service mode="disabled" name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+  <service mode="disabled" name="set_version"/>
+  <service name="cargo_audit" mode="disabled">
+     <param name="srcdir">kanidm</param>
+  </service>
+  <service name="cargo_vendor" mode="disabled">
+     <param name="srcdir">kanidm</param>
+     <param name="compression">xz</param>
+  </service>
+
+
+  <service name="download_url" mode="serveronly">
     <param name="host">static.rust-lang.org</param>
     <param name="protocol">https</param>
     <param name="path">/dist/rust-1.52.1-aarch64-unknown-linux-gnu.tar.gz</param>
   </service>
-  <service name="download_url">
+  <service name="download_url" mode="serveronly">
     <param name="host">static.rust-lang.org</param>
     <param name="protocol">https</param>
     <param name="path">/dist/rust-1.52.1-x86_64-unknown-linux-gnu.tar.gz</param>
   </service>
-  <service name="download_url">
+  <service name="download_url" mode="serveronly">
     <param name="host">static.rust-lang.org</param>
     <param name="protocol">https</param>
     <param name="path">/dist/rust-1.52.1-armv7-unknown-linux-gnueabihf.tar.gz</param>

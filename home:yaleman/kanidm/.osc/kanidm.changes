@@ -1,4 +1,19 @@
 -------------------------------------------------------------------
+Sun May 30 07:14:50 UTC 2021 - james@terminaloutcomes.com
+
+- Update to version 1.1.0-alpha.4~git39.033b977:
+  * Add ldap vattr mapping (#459)
+  * Fix for unixd issue (#460)
+  * 414 clear stale credentials (#447)
+  * Fix multivalue setting of description attribute (#457)
+  * 445 update pam nsswitch md (#451)
+  * simpler ip logging (#454)
+  * I might have become clippy this time (#449)
+  * Calming clippy's nerves, Friday edition (#448)
+  * 444 - client's config URI missing and more file open handling (#446)
+  * Fix proxy usage in tests (#443)
+
+-------------------------------------------------------------------
 Fri May 28 22:55:58 UTC 2021 - James Hodgkinson <james@terminaloutcomes.com>
 
 - I really wish I could work this thing out. 
