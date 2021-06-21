@@ -1,7 +1,9 @@
-<directory name="kanidm" rev="24" vrev="3" srcmd5="f7bc2638bb4dcf64166750420982a6b3">
-  <serviceinfo code="succeeded" xsrcmd5="55322b80049a146faae716155a12ab76" />
+<directory name="kanidm" rev="28" vrev="7" srcmd5="f613daa5e5322ed12554b64c63b76815">
+  <serviceinfo code="failed" xsrcmd5="d7f62b08ab45eaf80d0a61a590741d14">
+    <error>service error:  400 remote error: /usr/lib/obs/service//tar.service  No such file or directory (http://obs-service:5153/sourceupdate/home:yaleman/kanidm?timeout=7200)</error>
+  </serviceinfo>
   <entry name="README.md" md5="adb8513f5c59fe7f6935ce6759d2a6e1" size="319" mtime="1622343719" />
-  <entry name="_service" md5="681e954b5b28b4ea674f628dd50dc24f" size="1721" mtime="1622384638" />
+  <entry name="_service" md5="c2bf1d07e8d45cc2aa06b22b8f502c82" size="1656" mtime="1622814871" />
   <entry name="debian.changelog" md5="6d2f03abb2c8b566bf1d3df26e96d1c1" size="262" mtime="1622384640" />
   <entry name="debian.compat" md5="31d30eea8d0968d6458e0ad0027c9f80" size="3" mtime="1622284581" />
   <entry name="debian.control" md5="9ca2560aa40cda484dae45578a173e2e" size="48" mtime="1622284583" />
