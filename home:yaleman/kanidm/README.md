@@ -20,3 +20,5 @@ set  `DEBTRANSFORM-TAR-FILES: debian-files.tar.gz` in `kanidm_1.1.0alpha.4.dsc` 
 
 
 Changed it to `kanidm.tar.gz` and set `Source: kanidm` in `debian.control` and ... it got further...
+
+... actually it didn't, it was just running so slow it hadn't failed yet. FFS.

@@ -1,6 +1,6 @@
-<directory name="kanidm" rev="13" vrev="13" srcmd5="ef4cf121d7626bb3383d270baf83f8da">
-  <serviceinfo code="succeeded" xsrcmd5="b908976635f718dac891041cdad09be2" />
-  <entry name="README.md" md5="adb8513f5c59fe7f6935ce6759d2a6e1" size="319" mtime="1622343719" />
+<directory name="kanidm" rev="16" vrev="16" srcmd5="4bcf5d7c725e8b90b046a4d5a6890b92">
+  <serviceinfo code="succeeded" xsrcmd5="f121385925c0fa73bf26c4cec185c32f" />
+  <entry name="README.md" md5="88debb58732f966a3256a88e749ed8ed" size="790" mtime="1624601846" />
   <entry name="_service" md5="bccfdfe2bf9518607dba550ade227dbd" size="1747" mtime="1624317010" />
   <entry name="debian-files.tar.gz" md5="7597fe35dd7dcf346494749808944293" size="1475" mtime="1624595067" />
   <entry name="debian.changelog" md5="6d2f03abb2c8b566bf1d3df26e96d1c1" size="262" mtime="1622384640" />
@@ -11,6 +11,7 @@
   <entry name="grablatest.sh" md5="1e7d868e9e5735a8221063b8c1318e57" size="1601" mtime="1622269483" />
   <entry name="kanidm-unixd_1.1.0alpha.4.dscdisabled" md5="1dfb9ed0e3deddf95855bdf6b42d5e1e" size="723" mtime="1624282647" />
   <entry name="kanidm.changes" md5="5a3c9e0e50582cadca56d8250129b303" size="808" mtime="1622384642" />
+  <entry name="kanidm.dsc" md5="61652c5b945de7660541c42d0d93ff57" size="492" mtime="1624604517" />
   <entry name="kanidm.spec" md5="293209842dcc8b13de8624546e1edf4b" size="2584" mtime="1624317012" />
   <entry name="kanidm_1.1.0alpha.4.dsc" md5="26ffef06f3684257307b16bf8143f3b6" size="460" mtime="1624601162" />
   <entry name="rust-1.52.1-aarch64-unknown-linux-gnu.tar.gz" md5="9fe0ab913ce734652ce45e1d28b11e06" size="362918745" mtime="1624282891" />
