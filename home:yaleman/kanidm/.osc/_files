@@ -1,18 +1,18 @@
-<directory name="kanidm" rev="28" vrev="7" srcmd5="f613daa5e5322ed12554b64c63b76815">
-  <serviceinfo code="failed" xsrcmd5="d7f62b08ab45eaf80d0a61a590741d14">
-    <error>service error:  400 remote error: /usr/lib/obs/service//tar.service  No such file or directory (http://obs-service:5153/sourceupdate/home:yaleman/kanidm?timeout=7200)</error>
-  </serviceinfo>
+<directory name="kanidm" rev="13" vrev="13" srcmd5="ef4cf121d7626bb3383d270baf83f8da">
+  <serviceinfo code="succeeded" xsrcmd5="b908976635f718dac891041cdad09be2" />
   <entry name="README.md" md5="adb8513f5c59fe7f6935ce6759d2a6e1" size="319" mtime="1622343719" />
-  <entry name="_service" md5="c2bf1d07e8d45cc2aa06b22b8f502c82" size="1656" mtime="1622814871" />
+  <entry name="_service" md5="bccfdfe2bf9518607dba550ade227dbd" size="1747" mtime="1624317010" />
+  <entry name="debian-files.tar.gz" md5="7597fe35dd7dcf346494749808944293" size="1475" mtime="1624595067" />
   <entry name="debian.changelog" md5="6d2f03abb2c8b566bf1d3df26e96d1c1" size="262" mtime="1622384640" />
   <entry name="debian.compat" md5="31d30eea8d0968d6458e0ad0027c9f80" size="3" mtime="1622284581" />
-  <entry name="debian.control" md5="9ca2560aa40cda484dae45578a173e2e" size="48" mtime="1622284583" />
+  <entry name="debian.control" md5="fde69c6d50f2e4f848f142bf24b7c727" size="63" mtime="1624601160" />
   <entry name="debian.install" md5="6427e4d92136ed0c58d2000c7b489994" size="30" mtime="1622300453" />
   <entry name="debian.rules" md5="ef3632bf21f3f59b2c7903f505c29f7f" size="2265" mtime="1622384641" />
   <entry name="grablatest.sh" md5="1e7d868e9e5735a8221063b8c1318e57" size="1601" mtime="1622269483" />
+  <entry name="kanidm-unixd_1.1.0alpha.4.dscdisabled" md5="1dfb9ed0e3deddf95855bdf6b42d5e1e" size="723" mtime="1624282647" />
   <entry name="kanidm.changes" md5="5a3c9e0e50582cadca56d8250129b303" size="808" mtime="1622384642" />
-  <entry name="kanidm.spec" md5="c223ee77e782e1a7784eca29735aba05" size="2567" mtime="1622384643" />
-  <entry name="kanidm_1.1.0alpha.4.dsc" md5="edec62d60c5045e25fa9871ee7e85daf" size="737" mtime="1622384645" />
-  <entry name="kanidm_1.1.0alpha.4.tar.gz" md5="e865999638a3356e0003671141e65cac" size="2849265" mtime="1622284597" />
-  <entry name="rust-1.52.1-x86_64-unknown-linux-gnu.tar.gz" md5="ae073d2bfe4ff4a9d4d723b7c115d1cd" size="249887515" mtime="1622284905" />
+  <entry name="kanidm.spec" md5="293209842dcc8b13de8624546e1edf4b" size="2584" mtime="1624317012" />
+  <entry name="kanidm_1.1.0alpha.4.dsc" md5="26ffef06f3684257307b16bf8143f3b6" size="460" mtime="1624601162" />
+  <entry name="rust-1.52.1-aarch64-unknown-linux-gnu.tar.gz" md5="9fe0ab913ce734652ce45e1d28b11e06" size="362918745" mtime="1624282891" />
+  <entry name="rust-1.52.1-armv7-unknown-linux-gnueabihf.tar.gz" md5="b33d360e2e61653e843abab3884d5b86" size="297854682" mtime="1624283086" />
 </directory>

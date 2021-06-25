@@ -8,8 +8,10 @@
     <param name="versionrewrite-replacement">\1</param>
     <param name="changesgenerate">enable</param>
     <param name="changesauthor">james@terminaloutcomes.com</param>
+    <param name="extension">tar.gz</param>
   </service>
-  <service name="recompress">
+  <service mode="disabled" name="tar" />
+  <service mode="disabled" name="recompress">
     <param name="file">*.tar</param>
     <param name="compression">xz</param>
   </service>
@@ -17,7 +19,7 @@
   <service name="cargo_audit" mode="disabled">
      <param name="srcdir">kanidm</param>
   </service>
-  <service name="cargo_vendor">
+  <service mode="disabled" name="cargo_vendor">
      <param name="srcdir">kanidm</param>
      <param name="compression">xz</param>
   </service>

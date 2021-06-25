@@ -23,7 +23,7 @@ Summary:	Kanidm CLI Client
 # FIXME: Select a correct license from https://github.com/openSUSE/spec-cleaner#spdx-licenses
 License:        Mozilla Public License Version 2.0
 URL:            https://github.com/kanidm/kanidm
-BuildRequires:  libudev-devel gzip libopenssl-devel git sqlite3-devel gcc sccache which pam-devel rust cargo 
+BuildRequires:  git-buildpackage libudev-devel gzip libopenssl-devel git sqlite3-devel gcc sccache which pam-devel rust cargo 
 Source:	        %{name}_%{version}.tar.gz	
 
 %description

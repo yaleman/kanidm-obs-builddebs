@@ -1,21 +1,5 @@
 <package name="kanidm" project="home:yaleman">
-  <title>Kanidm CLI</title>
+  <title/>
   <description/>
-  <build>
-    <enable/>
-    <disable repository="xUbuntu_16.04"/>
-    <disable repository="xUbuntu_18.04"/>
-    <disable repository="openSUSE_Tumbleweed"/>
-  </build>
-  <publish>
-    <disable repository="xUbuntu_16.04"/>
-    <disable repository="xUbuntu_18.04"/>
-    <disable repository="openSUSE_Tumbleweed"/>
-  </publish>
-  <useforbuild>
-    <disable repository="xUbuntu_16.04"/>
-    <disable repository="xUbuntu_18.04"/>
-    <disable repository="openSUSE_Tumbleweed"/>
-  </useforbuild>
 </package>
 
